@@ -436,7 +436,7 @@
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
-                      <div class="visitor" id="visitor">00</div>
+                      <div class="getvisitor" id="getvisitor">00</div>
                       </div>
                       <div class="mt-2 mb-0 text-muted text-xs">
                       </span>
@@ -723,10 +723,10 @@
  <script>
   function getvisitor(){
               var xhr = new XMLHttpRequest();
-              var url = 'https://api.countapi.xyz/hit/zahirr-web.herokuapp.com/visits';
+              var url = 'https://api.countapi.xyz/hit/https://zeus-ser.github.io/shefin-alexa/visits';
               xhr.onloadend = function(){
              data = JSON.parse(this.responseText);
-  document.getElementById("visitor").textContent = data.value
+  document.getElementById("getvisitor").textContent = data.value
               };
               xhr.open("GET", url, true);
               xhr.send();
